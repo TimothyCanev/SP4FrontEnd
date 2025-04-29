@@ -431,3 +431,47 @@ nav {
     color: #2563eb;
     text-decoration: underline;
 }
+
+.user-nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-btn, .register-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: #3a86ff;
+    border: 1px solid #3a86ff;
+}
+
+.login-btn:hover {
+    background-color: #f0f7ff;
+}
+
+.register-btn {
+    background-color: #3a86ff;
+    color: white;
+}
+
+.register-btn:hover {
+    background-color: #2563eb;
+}
+
+.active {
+    color: #3a86ff;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .user-nav-links {
+        order: 1;
+        margin-top: 10px;
+    }
+}
